@@ -117,7 +117,7 @@
 }
 
 #pragma mark - BackViewController代理方法
-- (void)backViewDidSelectRow:(UIViewController *)viewController
+- (void)backViewPushToVc:(UIViewController *)viewController
 {
     // 防止tableViewCell被多次点击
     if (self.childViewControllers.count > 1) {

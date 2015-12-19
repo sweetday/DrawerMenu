@@ -124,14 +124,14 @@ static id _instance;
     if (indexPath.row == 0) {
         UIViewController *vc = [[UIViewController alloc] init];
         vc.view.backgroundColor = [UIColor whiteColor];
-        if ([self.delegate respondsToSelector:@selector(backViewDidSelectRow:)]) {
-            [self.delegate backViewDidSelectRow:vc];
+        if ([self.delegate respondsToSelector:@selector(backViewPushToVc:)]) {
+            [self.delegate backViewPushToVc:vc];
         }
     } else {
         TableViewController *tableVc = [[TableViewController alloc] init];
         tableVc.view.backgroundColor = [UIColor whiteColor];
-        if ([self.delegate respondsToSelector:@selector(backViewDidSelectRow:)]) {
-            [self.delegate backViewDidSelectRow:tableVc];
+        if ([self.delegate respondsToSelector:@selector(backViewPushToVc:)]) {
+            [self.delegate backViewPushToVc:tableVc];
         }
     }
 }

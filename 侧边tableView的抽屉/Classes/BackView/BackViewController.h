@@ -13,7 +13,7 @@
 @protocol BackViewControllerDelegate <NSObject>
 
 @optional
-- (void)backViewDidSelectRow:(UIViewController *)viewController;
+- (void)backViewPushToVc:(UIViewController *)viewController;
 // 点击左上角后，出现抽屉效果，通知代理让首页去完成
 - (void)backViewDidClickLeftItem;
 @end
